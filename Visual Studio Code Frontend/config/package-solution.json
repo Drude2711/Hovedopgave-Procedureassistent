@@ -1,0 +1,40 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "frontend-procedureassistent-client-side-solution",
+    "id": "942753e4-452c-48d7-9526-44aa6fc17ed7",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.23.2"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "FrontendProcedureassistent description"
+      },
+      "longDescription": {
+        "default": "FrontendProcedureassistent description"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "frontend-procedureassistent Feature",
+        "description": "The feature that activates elements of the frontend-procedureassistent solution.",
+        "id": "fbd0bac6-b741-488a-b426-6910a55eb439",
+        "version": "1.0.0.0"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/frontend-procedureassistent.sppkg"
+  }
+}
