@@ -1,0 +1,26 @@
+Procedureassistent noter
+
+1 - Chat i SharePoint (Must)
+        - Stil et spørgsmål og få et svar
+        - Vis indlæsning, mens der ventes på svar
+        - Vis fejlbesked, hvis API'et fejler
+
+2 - Svar med kilder (Must)
+        - Vis hvilke dokumenter svaret bygger på
+        - Link til dokumentet i SharePoint
+        - "Det ved jeg ikke", når svaret ikke findes
+
+3 - Forbindelse til backend (Must)
+        - ApiProvider kalder C#-backend med AadHttpClient
+        - API-URL og Application ID URI sættes i webpartens egenskaber
+        - Uden API-URL kører webparten i testtilstand
+
+4 - Adgangsstyring (Should)
+        - Brugeren må kun få svar fra dokumenter, vedkommende har adgang til
+        - Håndteres i backend ud fra brugerens token
+
+5 - Brugervenlighed (Should/Could)
+        - Enter sender, Shift+Enter giver ny linje
+        - Matche sitets farver (theme-tokens i scss)
+        - (Ryd samtale-knap?)
+        - (Feedback på svar: tommel op/ned?)
