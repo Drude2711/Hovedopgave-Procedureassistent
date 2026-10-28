@@ -3,6 +3,8 @@
   "Values": {
     "AzureWebJobsStorage": "UseDevelopmentStorage=true",
     "FUNCTIONS_WORKER_RUNTIME": "dotnet-isolated",
-    "AzureWebJobsDashboard": "UseDevelopmentStorage=true"
+    "AzureWebJobsDashboard": "UseDevelopmentStorage=true",
+    "AZURE_OPENAI_ENDPOINT": "https://praktik2026-9976-resource.openai.azure.com/",
+    "AZURE_OPENAI_DEPLOYMENT": "gpt-5"
   }
 }

@@ -426,3 +426,5 @@ FodyWeavers.xsd
 
 # Official VS Code C# Dev Kit Extension exclusion
 #*.lscache
+# Azure Functions – lokale indstillinger og nøgler må aldrig i Git
+local.settings.json
