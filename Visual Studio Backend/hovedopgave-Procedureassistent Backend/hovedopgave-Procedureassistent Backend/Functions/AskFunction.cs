@@ -1,4 +1,5 @@
-using hovedopgave_Procedureassistent_Backend.Models;
+using Common;
+using Common.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Azure.Functions.Worker;
@@ -6,6 +7,10 @@ using Microsoft.Extensions.Logging;
 
 namespace hovedopgave_Procedureassistent_Backend.Functions;
 
+/// <summary>
+/// Tynd HTTP-funktion: læser spørgsmålet og sender det videre til Common.
+/// Al logik ligger i Common, så den også kan køres fra TestConsole.
+/// </summary>
 public class AskFunction
 {
     private readonly ILogger<AskFunction> _logger;
@@ -36,16 +41,16 @@ public class AskFunction
             return new BadRequestObjectResult("Feltet 'question' mangler.");
         }
 
-        _logger.LogInformation("Spørgsmål modtaget: {Question}", request.Question);
-
-        // Trin 2 i walking skeleton: hårdkodet svar.
-        // Trin 3 erstatter dette med et kald til GPT-5 i Azure AI Foundry.
-        var response = new AskResponse
+        try
         {
-            Answer = $"Hej fra backend! Du spurgte: \"{request.Question}\"",
-            Sources = new List<Source> { new() { Title = "Backend-test" } }
-        };
-
-        return new OkObjectResult(response);
+            var common = new CommonServices(_logger);
+            AskResponse response = await common.AskAsync(request.Question);
+            return new OkObjectResult(response);
+        }
+        catch (Exception ex)
+        {
+            _logger.LogError(ex, "Fejl ved behandling af spørgsmålet");
+            return new ObjectResult("Kunne ikke hente svar.") { StatusCode = 502 };
+        }
     }
 }

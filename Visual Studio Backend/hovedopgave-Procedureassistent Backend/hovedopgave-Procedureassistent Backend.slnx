@@ -1,3 +1,5 @@
 <Solution>
+  <Project Path="Common/Common.csproj" />
   <Project Path="hovedopgave-Procedureassistent Backend/hovedopgave-Procedureassistent Backend.csproj" />
+  <Project Path="TestConsole/TestConsole.csproj" />
 </Solution>
