@@ -1,10 +1,6 @@
 import * as React from "react";
-import { MessageBar, MessageBarType } from "@fluentui/react";
 import { GlobalContext } from "../Context/GlobalContext";
 import { IChatMessage } from "../Api/Models/IChatMessage";
-import { ChatWindow } from "../Components/Chat/ChatWindow";
-import { ChatInput } from "../Components/Chat/ChatInput";
-import styles from "../Components/Chat/Chat.module.scss";
 
 export interface IChatFeatureProps {
   title: string;
@@ -15,6 +11,7 @@ const newId = (): string => `${Date.now()}-${Math.random().toString(36).slice(2)
 export const ChatFeature: React.FunctionComponent<IChatFeatureProps> = (props: IChatFeatureProps) => {
   const [messages, setMessages] = React.useState<IChatMessage[]>([]);
   const [loading, setLoading] = React.useState<boolean>(false);
+  const [input, setInput] = React.useState<string>("");
 
   const globalContext = React.useContext(GlobalContext);
 
@@ -47,16 +44,37 @@ export const ChatFeature: React.FunctionComponent<IChatFeatureProps> = (props: I
     }
   }
 
+  function onSend(): void {
+    const question = input.trim();
+    if (!question || loading) {
+      return;
+    }
+    setInput("");
+    void askQuestion(question);
+  }
+
   return (
-    <section className={styles.chat}>
-      <h2 className={styles.title}>{props.title}</h2>
-      {globalContext?.apiProvider.isMock && (
-        <MessageBar messageBarType={MessageBarType.warning}>
-          Testtilstand: Der er ikke angivet en API-URL i webpartens egenskaber, så svarene er testsvar.
-        </MessageBar>
-      )}
-      <ChatWindow messages={messages} loading={loading} />
-      <ChatInput disabled={loading} onSend={(question) => { void askQuestion(question); }} />
+    <section>
+      <h2>{props.title}</h2>
+
+      {/* Beskederne */}
+      <div>
+        {messages.map((message) => (
+          <p key={message.id}>
+            <strong>{message.role === "user" ? "Dig" : "Assistent"}:</strong> {message.text}
+          </p>
+        ))}
+        {loading && <p>Søger i procedurerne…</p>}
+      </div>
+
+      {/* Input */}
+      <input
+        value={input}
+        onChange={(e) => setInput(e.target.value)}
+        placeholder="Skriv dit spørgsmål…"
+        disabled={loading}
+      />
+      <button onClick={onSend} disabled={loading}>Send</button>
     </section>
   );
 };
