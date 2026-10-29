@@ -1,6 +1,7 @@
 import * as React from "react";
 import { GlobalContext } from "../Context/GlobalContext";
 import { IChatMessage } from "../Api/Models/IChatMessage";
+import { IChatTurn } from "../Api/Models/IChatTurn";
 
 export interface IChatFeatureProps {
   title: string;
@@ -20,11 +21,16 @@ export const ChatFeature: React.FunctionComponent<IChatFeatureProps> = (props: I
       return;
     }
 
+    // Samtalen indtil nu sendes med, så modellen kan forstå opfølgende spørgsmål (fejlbeskeder springes over)
+    const history: IChatTurn[] = messages
+      .filter((m) => !m.isError)
+      .map((m) => ({ role: m.role, text: m.text }));
+
     setMessages((prev) => [...prev, { id: newId(), role: "user", text: question }]);
     setLoading(true);
 
     try {
-      const response = await globalContext.apiProvider.ask(question);
+      const response = await globalContext.apiProvider.ask(question, history);
       setMessages((prev) => [...prev, {
         id: newId(),
         role: "assistant",
