@@ -6,7 +6,11 @@
     "AzureWebJobsDashboard": "UseDevelopmentStorage=true",
     "AZURE_OPENAI_ENDPOINT": "https://praktik2026-9976-resource.openai.azure.com/",
     "AZURE_OPENAI_DEPLOYMENT": "gpt-5",
-    "ASPNETCORE_ENVIRONMENT": "Development"
+    "ASPNETCORE_ENVIRONMENT": "Development",
+    "AZURE_TENANT_ID": "18e1c353-2932-415a-a834-3d3b07979aa8",
+    "API_CLIENT_ID": "118cd071-19f3-4a71-a835-e9ec9f0b7d0c",
+    "API_APP_ID_URI": "api://118cd071-19f3-4a71-a835-e9ec9f0b7d0c",
+    "AUTH_ENABLED": "true"
   },
   "Host": {
     "CORS": "https://evobisdev.sharepoint.com",

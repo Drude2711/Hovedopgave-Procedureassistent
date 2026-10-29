@@ -1,6 +1,12 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
   "solution": {
+    "webApiPermissionRequests": [
+      {
+        "resource": "Procedureassistent",
+        "scope": "user_impersonation"
+      }
+    ],
     "name": "frontend-procedureassistent-client-side-solution",
     "id": "942753e4-452c-48d7-9526-44aa6fc17ed7",
     "version": "1.0.0.0",

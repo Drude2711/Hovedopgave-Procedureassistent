@@ -1,5 +1,8 @@
+using System.Security.Claims;
 using Common;
+using Common.Authentication;
 using Common.Models;
+using Common.Utilities;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Azure.Functions.Worker;
@@ -7,12 +10,7 @@ using Microsoft.Extensions.Logging;
 
 namespace hovedopgave_Procedureassistent_Backend.Functions;
 
-/// <summary>
-/// Tynd HTTP-funktion: læser spørgsmålet og sender det videre til Common.
-/// Al logik ligger i Common, så den også kan køres fra TestConsole.
-/// </summary>
-public class AskFunction
-{
+public class AskFunction {
     private readonly ILogger<AskFunction> _logger;
 
     public AskFunction(ILogger<AskFunction> logger)
@@ -20,11 +18,22 @@ public class AskFunction
         _logger = logger;
     }
 
-   
     [Function("ask")]
     public async Task<IActionResult> Run(
         [HttpTrigger(AuthorizationLevel.Function, "post", Route = "ask")] HttpRequest req)
     {
+        string userName = "anonym";
+        if (AppSettings.AuthEnabled)
+        {
+            ClaimsIdentity? identity = await TokenValidator.ValidateAsync(req.Headers.Authorization.ToString());
+            if (identity is null)
+            {
+                _logger.LogWarning("Afvist: manglende eller ugyldigt token");
+                return new UnauthorizedResult();
+            }
+            userName = identity.FindFirst("name")?.Value ?? "ukendt";
+        }
+
         AskRequest? request;
         try
         {
@@ -40,6 +49,8 @@ public class AskFunction
         {
             return new BadRequestObjectResult("Feltet 'question' mangler.");
         }
+
+        _logger.LogInformation("Spørgsmål fra {User}", userName);
 
         try
         {
