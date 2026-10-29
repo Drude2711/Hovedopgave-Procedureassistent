@@ -1,5 +1,6 @@
 using Azure.AI.OpenAI;
 using Common.Authentication;
+using Common.Models;
 using Common.Utilities;
 using OpenAI.Chat;
 
@@ -25,12 +26,28 @@ internal class OpenAIProvider
         return _chatClient;
     }
 
-    internal async Task<string> GetAnswerAsync(string systemPrompt, string userMessage)
+    /// <summary>
+    /// Sender system-prompt, tidligere beskeder og det nye spørgsmål til modellen.
+    /// </summary>
+    internal async Task<string> GetAnswerAsync(string systemPrompt, IEnumerable<ChatTurn> history, string question)
     {
-        ChatCompletion completion = await GetChatClient().CompleteChatAsync(
-            new SystemChatMessage(systemPrompt),
-            new UserChatMessage(userMessage));
+        var messages = new List<ChatMessage> { new SystemChatMessage(systemPrompt) };
 
+        foreach (ChatTurn turn in history)
+        {
+            if (turn.Role == "assistant")
+            {
+                messages.Add(new AssistantChatMessage(turn.Text));
+            }
+            else
+            {
+                messages.Add(new UserChatMessage(turn.Text));
+            }
+        }
+
+        messages.Add(new UserChatMessage(question));
+
+        ChatCompletion completion = await GetChatClient().CompleteChatAsync(messages);
         return completion.Content[0].Text;
     }
 }

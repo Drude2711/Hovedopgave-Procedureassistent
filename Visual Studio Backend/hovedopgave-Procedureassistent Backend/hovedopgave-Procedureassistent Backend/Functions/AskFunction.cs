@@ -20,7 +20,7 @@ public class AskFunction
         _logger = logger;
     }
 
-    // POST /api/ask  –  body: { "question": "..." }
+    // POST /api/ask  –  body: { "question": "...", "history": [ { "role": "user", "text": "..." } ] }
     [Function("ask")]
     public async Task<IActionResult> Run(
         [HttpTrigger(AuthorizationLevel.Function, "post", Route = "ask")] HttpRequest req)
@@ -44,7 +44,7 @@ public class AskFunction
         try
         {
             var common = new CommonServices(_logger);
-            AskResponse response = await common.AskAsync(request.Question);
+            AskResponse response = await common.AskAsync(request.Question, request.History);
             return new OkObjectResult(response);
         }
         catch (Exception ex)

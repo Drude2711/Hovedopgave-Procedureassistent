@@ -18,7 +18,10 @@ internal class Program
 
         var common = new CommonServices(logger);
 
-        Console.WriteLine("Procedureassistent – testkonsol. Skriv et spørgsmål (tom linje afslutter).");
+        // Samtalen gemmes her i klienten og sendes med hver gang
+        var history = new List<ChatTurn>();
+
+        Console.WriteLine("Procedureassistent – testkonsol. Skriv et spørgsmål (tom linje afslutter, 'ny' starter forfra).");
 
         while (true)
         {
@@ -28,10 +31,19 @@ internal class Program
             {
                 break;
             }
+            if (question.Trim().Equals("ny", StringComparison.OrdinalIgnoreCase))
+            {
+                history.Clear();
+                Console.WriteLine("Samtalen er nulstillet.");
+                continue;
+            }
 
             var stopwatch = System.Diagnostics.Stopwatch.StartNew();
-            AskResponse response = await common.AskAsync(question);
+            AskResponse response = await common.AskAsync(question, history);
             stopwatch.Stop();
+
+            history.Add(new ChatTurn { Role = "user", Text = question });
+            history.Add(new ChatTurn { Role = "assistant", Text = response.Answer });
 
             Console.WriteLine($"\nSvar: {response.Answer}");
             Console.WriteLine($"Kilder: {(response.Sources.Count == 0 ? "ingen" : string.Join(", ", response.Sources.Select(s => s.Title)))}");

@@ -19,8 +19,8 @@ public class CommonServices
         _procedureAssistantService = new ProcedureAssistantService(_logger);
     }
 
-    public async Task<AskResponse> AskAsync(string question)
+    public async Task<AskResponse> AskAsync(string question, List<ChatTurn>? history = null)
     {
-        return await _procedureAssistantService.AskAsync(question);
+        return await _procedureAssistantService.AskAsync(question, history);
     }
 }
