@@ -4,10 +4,7 @@ using Microsoft.Extensions.Logging;
 
 namespace Common.Services;
 
-/// <summary>
-/// Forretningslogikken: tager et spørgsmål og returnerer et svar med kilder.
-/// Senere: søg i Azure AI Search, byg prompt med fundne afsnit, tjek adgang.
-/// </summary>
+
 internal class ProcedureAssistantService
 {
     private const string SystemPrompt =

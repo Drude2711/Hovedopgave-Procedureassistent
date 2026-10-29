@@ -20,7 +20,7 @@ public class AskFunction
         _logger = logger;
     }
 
-    // POST /api/ask  –  body: { "question": "...", "history": [ { "role": "user", "text": "..." } ] }
+   
     [Function("ask")]
     public async Task<IActionResult> Run(
         [HttpTrigger(AuthorizationLevel.Function, "post", Route = "ask")] HttpRequest req)

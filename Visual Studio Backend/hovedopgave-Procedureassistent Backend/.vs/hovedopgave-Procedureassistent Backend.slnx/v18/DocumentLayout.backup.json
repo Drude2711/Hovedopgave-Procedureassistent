@@ -1,37 +1,41 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Praktik\\Hovedopgave Procedureassistent\\Hovedopgave-Procedureassistent\\Visual Studio Backend\\hovedopgave-Procedureassistent Backend\\",
+  "WorkspaceRootPath": "C:\\Praktik\\Hovedopgave-Procedureassistent\\Visual Studio Backend\\hovedopgave-Procedureassistent Backend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\dotnet\\sdk\\10.0.401\\Roslyn\\Microsoft.Managed.Core.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{066C5B3F-84B7-17B8-F75A-F56C8284AF25}|hovedopgave-Procedureassistent Backend\\hovedopgave-Procedureassistent Backend.csproj|c:\\praktik\\hovedopgave procedureassistent\\hovedopgave-procedureassistent\\visual studio backend\\hovedopgave-procedureassistent backend\\hovedopgave-procedureassistent backend\\functions\\askfunction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{066C5B3F-84B7-17B8-F75A-F56C8284AF25}|hovedopgave-Procedureassistent Backend\\hovedopgave-Procedureassistent Backend.csproj|solutionrelative:hovedopgave-procedureassistent backend\\functions\\askfunction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{066C5B3F-84B7-17B8-F75A-F56C8284AF25}|hovedopgave-Procedureassistent Backend\\hovedopgave-Procedureassistent Backend.csproj|c:\\praktik\\hovedopgave procedureassistent\\hovedopgave-procedureassistent\\visual studio backend\\hovedopgave-procedureassistent backend\\hovedopgave-procedureassistent backend\\local.settings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{066C5B3F-84B7-17B8-F75A-F56C8284AF25}|hovedopgave-Procedureassistent Backend\\hovedopgave-Procedureassistent Backend.csproj|solutionrelative:hovedopgave-procedureassistent backend\\local.settings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{066C5B3F-84B7-17B8-F75A-F56C8284AF25}|hovedopgave-Procedureassistent Backend\\hovedopgave-Procedureassistent Backend.csproj|c:\\praktik\\hovedopgave procedureassistent\\hovedopgave-procedureassistent\\visual studio backend\\hovedopgave-procedureassistent backend\\hovedopgave-procedureassistent backend\\hovedopgave-procedureassistent backend.csproj.backup.tmp||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{066C5B3F-84B7-17B8-F75A-F56C8284AF25}|hovedopgave-Procedureassistent Backend\\hovedopgave-Procedureassistent Backend.csproj|solutionrelative:hovedopgave-procedureassistent backend\\hovedopgave-procedureassistent backend.csproj.backup.tmp||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E15E491A-E872-91D8-DF7A-CA59C792F064}|Common\\Common.csproj|c:\\praktik\\hovedopgave procedureassistent\\hovedopgave-procedureassistent\\visual studio backend\\hovedopgave-procedureassistent backend\\common\\services\\procedureassistantservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E15E491A-E872-91D8-DF7A-CA59C792F064}|Common\\Common.csproj|c:\\praktik\\hovedopgave-procedureassistent\\visual studio backend\\hovedopgave-procedureassistent backend\\common\\services\\procedureassistantservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E15E491A-E872-91D8-DF7A-CA59C792F064}|Common\\Common.csproj|solutionrelative:common\\services\\procedureassistantservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E15E491A-E872-91D8-DF7A-CA59C792F064}|Common\\Common.csproj|c:\\praktik\\hovedopgave procedureassistent\\hovedopgave-procedureassistent\\visual studio backend\\hovedopgave-procedureassistent backend\\common\\models\\source.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E15E491A-E872-91D8-DF7A-CA59C792F064}|Common\\Common.csproj|solutionrelative:common\\models\\source.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BEF58E74-9439-23AC-3AC1-4B31F9DE9CAB}|TestConsole\\TestConsole.csproj|c:\\praktik\\hovedopgave-procedureassistent\\visual studio backend\\hovedopgave-procedureassistent backend\\testconsole\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BEF58E74-9439-23AC-3AC1-4B31F9DE9CAB}|TestConsole\\TestConsole.csproj|solutionrelative:testconsole\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E15E491A-E872-91D8-DF7A-CA59C792F064}|Common\\Common.csproj|c:\\praktik\\hovedopgave procedureassistent\\hovedopgave-procedureassistent\\visual studio backend\\hovedopgave-procedureassistent backend\\common\\models\\askrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{066C5B3F-84B7-17B8-F75A-F56C8284AF25}|hovedopgave-Procedureassistent Backend\\hovedopgave-Procedureassistent Backend.csproj|c:\\praktik\\hovedopgave-procedureassistent\\visual studio backend\\hovedopgave-procedureassistent backend\\hovedopgave-procedureassistent backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{066C5B3F-84B7-17B8-F75A-F56C8284AF25}|hovedopgave-Procedureassistent Backend\\hovedopgave-Procedureassistent Backend.csproj|solutionrelative:hovedopgave-procedureassistent backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{066C5B3F-84B7-17B8-F75A-F56C8284AF25}|hovedopgave-Procedureassistent Backend\\hovedopgave-Procedureassistent Backend.csproj|c:\\praktik\\hovedopgave-procedureassistent\\visual studio backend\\hovedopgave-procedureassistent backend\\hovedopgave-procedureassistent backend\\functions\\askfunction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{066C5B3F-84B7-17B8-F75A-F56C8284AF25}|hovedopgave-Procedureassistent Backend\\hovedopgave-Procedureassistent Backend.csproj|solutionrelative:hovedopgave-procedureassistent backend\\functions\\askfunction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E15E491A-E872-91D8-DF7A-CA59C792F064}|Common\\Common.csproj|c:\\praktik\\hovedopgave-procedureassistent\\visual studio backend\\hovedopgave-procedureassistent backend\\common\\providers\\openaiprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E15E491A-E872-91D8-DF7A-CA59C792F064}|Common\\Common.csproj|solutionrelative:common\\providers\\openaiprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E15E491A-E872-91D8-DF7A-CA59C792F064}|Common\\Common.csproj|c:\\praktik\\hovedopgave-procedureassistent\\visual studio backend\\hovedopgave-procedureassistent backend\\common\\models\\askrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E15E491A-E872-91D8-DF7A-CA59C792F064}|Common\\Common.csproj|solutionrelative:common\\models\\askrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E15E491A-E872-91D8-DF7A-CA59C792F064}|Common\\Common.csproj|c:\\praktik\\hovedopgave procedureassistent\\hovedopgave-procedureassistent\\visual studio backend\\hovedopgave-procedureassistent backend\\common\\providers\\openaiprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E15E491A-E872-91D8-DF7A-CA59C792F064}|Common\\Common.csproj|solutionrelative:common\\providers\\openaiprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E15E491A-E872-91D8-DF7A-CA59C792F064}|Common\\Common.csproj|c:\\praktik\\hovedopgave-procedureassistent\\visual studio backend\\hovedopgave-procedureassistent backend\\common\\models\\source.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E15E491A-E872-91D8-DF7A-CA59C792F064}|Common\\Common.csproj|solutionrelative:common\\models\\source.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{066C5B3F-84B7-17B8-F75A-F56C8284AF25}|hovedopgave-Procedureassistent Backend\\hovedopgave-Procedureassistent Backend.csproj|c:\\praktik\\hovedopgave-procedureassistent\\visual studio backend\\hovedopgave-procedureassistent backend\\hovedopgave-procedureassistent backend\\local.settings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{066C5B3F-84B7-17B8-F75A-F56C8284AF25}|hovedopgave-Procedureassistent Backend\\hovedopgave-Procedureassistent Backend.csproj|solutionrelative:hovedopgave-procedureassistent backend\\local.settings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Praktik\\Hovedopgave Procedureassistent\\Hovedopgave-Procedureassistent\\Visual Studio Backend\\hovedopgave-Procedureassistent Backend\\hovedopgave-Procedureassistent Backend\\hovedopgave-Procedureassistent Backend.csproj.Backup.tmp||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     }
   ],
   "DocumentGroupContainers": [
@@ -41,7 +45,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -49,76 +53,88 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Praktik\\Hovedopgave-Procedureassistent\\Visual Studio Backend\\hovedopgave-Procedureassistent Backend\\TestConsole\\Program.cs",
+              "RelativeDocumentMoniker": "TestConsole\\Program.cs",
+              "ToolTip": "C:\\Praktik\\Hovedopgave-Procedureassistent\\Visual Studio Backend\\hovedopgave-Procedureassistent Backend\\TestConsole\\Program.cs",
+              "RelativeToolTip": "TestConsole\\Program.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-29T11:02:14.061Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Praktik\\Hovedopgave-Procedureassistent\\Visual Studio Backend\\hovedopgave-Procedureassistent Backend\\hovedopgave-Procedureassistent Backend\\Program.cs",
+              "RelativeDocumentMoniker": "hovedopgave-Procedureassistent Backend\\Program.cs",
+              "ToolTip": "C:\\Praktik\\Hovedopgave-Procedureassistent\\Visual Studio Backend\\hovedopgave-Procedureassistent Backend\\hovedopgave-Procedureassistent Backend\\Program.cs",
+              "RelativeToolTip": "hovedopgave-Procedureassistent Backend\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-29T11:02:11.007Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "ProcedureAssistantService.cs",
-              "DocumentMoniker": "C:\\Praktik\\Hovedopgave Procedureassistent\\Hovedopgave-Procedureassistent\\Visual Studio Backend\\hovedopgave-Procedureassistent Backend\\Common\\Services\\ProcedureAssistantService.cs",
+              "DocumentMoniker": "C:\\Praktik\\Hovedopgave-Procedureassistent\\Visual Studio Backend\\hovedopgave-Procedureassistent Backend\\Common\\Services\\ProcedureAssistantService.cs",
               "RelativeDocumentMoniker": "Common\\Services\\ProcedureAssistantService.cs",
-              "ToolTip": "C:\\Praktik\\Hovedopgave Procedureassistent\\Hovedopgave-Procedureassistent\\Visual Studio Backend\\hovedopgave-Procedureassistent Backend\\Common\\Services\\ProcedureAssistantService.cs",
-              "RelativeToolTip": "Common\\Services\\ProcedureAssistantService.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAkwBwAAABXAAAAAAAAAA==",
+              "ToolTip": "C:\\Praktik\\Hovedopgave-Procedureassistent\\Visual Studio Backend\\hovedopgave-Procedureassistent Backend\\Common\\Services\\ProcedureAssistantService.cs*",
+              "RelativeToolTip": "Common\\Services\\ProcedureAssistantService.cs*",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAkwAYAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-10-29T09:11:14.744Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Microsoft.Managed.Core.targets",
-              "DocumentMoniker": "C:\\Program Files\\dotnet\\sdk\\10.0.401\\Roslyn\\Microsoft.Managed.Core.targets",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\Program Files\\dotnet\\sdk\\10.0.401\\Roslyn\\Microsoft.Managed.Core.targets",
-              "ToolTip": "C:\\Program Files\\dotnet\\sdk\\10.0.401\\Roslyn\\Microsoft.Managed.Core.targets*",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\Program Files\\dotnet\\sdk\\10.0.401\\Roslyn\\Microsoft.Managed.Core.targets*",
-              "ViewState": "AgIAALQAAAAAAAAAAAAkwMIAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
-              "WhenOpened": "2026-10-29T09:02:44.663Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 8,
               "Title": "hovedopgave-Procedureassistent Backend.csproj.Backup.tmp",
               "DocumentMoniker": "C:\\Praktik\\Hovedopgave Procedureassistent\\Hovedopgave-Procedureassistent\\Visual Studio Backend\\hovedopgave-Procedureassistent Backend\\hovedopgave-Procedureassistent Backend\\hovedopgave-Procedureassistent Backend.csproj.Backup.tmp",
-              "RelativeDocumentMoniker": "hovedopgave-Procedureassistent Backend\\hovedopgave-Procedureassistent Backend.csproj.Backup.tmp",
+              "RelativeDocumentMoniker": "..\\..\\..\\Hovedopgave Procedureassistent\\Hovedopgave-Procedureassistent\\Visual Studio Backend\\hovedopgave-Procedureassistent Backend\\hovedopgave-Procedureassistent Backend\\hovedopgave-Procedureassistent Backend.csproj.Backup.tmp",
               "ToolTip": "C:\\Praktik\\Hovedopgave Procedureassistent\\Hovedopgave-Procedureassistent\\Visual Studio Backend\\hovedopgave-Procedureassistent Backend\\hovedopgave-Procedureassistent Backend\\hovedopgave-Procedureassistent Backend.csproj.Backup.tmp",
-              "RelativeToolTip": "hovedopgave-Procedureassistent Backend\\hovedopgave-Procedureassistent Backend.csproj.Backup.tmp",
+              "RelativeToolTip": "..\\..\\..\\Hovedopgave Procedureassistent\\Hovedopgave-Procedureassistent\\Visual Studio Backend\\hovedopgave-Procedureassistent Backend\\hovedopgave-Procedureassistent Backend\\hovedopgave-Procedureassistent Backend.csproj.Backup.tmp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2026-10-29T09:00:38.488Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-29T09:00:38.488Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 4,
               "Title": "OpenAIProvider.cs",
-              "DocumentMoniker": "C:\\Praktik\\Hovedopgave Procedureassistent\\Hovedopgave-Procedureassistent\\Visual Studio Backend\\hovedopgave-Procedureassistent Backend\\Common\\Providers\\OpenAIProvider.cs",
+              "DocumentMoniker": "C:\\Praktik\\Hovedopgave-Procedureassistent\\Visual Studio Backend\\hovedopgave-Procedureassistent Backend\\Common\\Providers\\OpenAIProvider.cs",
               "RelativeDocumentMoniker": "Common\\Providers\\OpenAIProvider.cs",
-              "ToolTip": "C:\\Praktik\\Hovedopgave Procedureassistent\\Hovedopgave-Procedureassistent\\Visual Studio Backend\\hovedopgave-Procedureassistent Backend\\Common\\Providers\\OpenAIProvider.cs",
-              "RelativeToolTip": "Common\\Providers\\OpenAIProvider.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAmwCcAAAAgAAAAAAAAAA==",
+              "ToolTip": "C:\\Praktik\\Hovedopgave-Procedureassistent\\Visual Studio Backend\\hovedopgave-Procedureassistent Backend\\Common\\Providers\\OpenAIProvider.cs*",
+              "RelativeToolTip": "Common\\Providers\\OpenAIProvider.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-10-29T08:48:58.495Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 5,
               "Title": "AskRequest.cs",
-              "DocumentMoniker": "C:\\Praktik\\Hovedopgave Procedureassistent\\Hovedopgave-Procedureassistent\\Visual Studio Backend\\hovedopgave-Procedureassistent Backend\\Common\\Models\\AskRequest.cs",
+              "DocumentMoniker": "C:\\Praktik\\Hovedopgave-Procedureassistent\\Visual Studio Backend\\hovedopgave-Procedureassistent Backend\\Common\\Models\\AskRequest.cs",
               "RelativeDocumentMoniker": "Common\\Models\\AskRequest.cs",
-              "ToolTip": "C:\\Praktik\\Hovedopgave Procedureassistent\\Hovedopgave-Procedureassistent\\Visual Studio Backend\\hovedopgave-Procedureassistent Backend\\Common\\Models\\AskRequest.cs",
-              "RelativeToolTip": "Common\\Models\\AskRequest.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "ToolTip": "C:\\Praktik\\Hovedopgave-Procedureassistent\\Visual Studio Backend\\hovedopgave-Procedureassistent Backend\\Common\\Models\\AskRequest.cs*",
+              "RelativeToolTip": "Common\\Models\\AskRequest.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-10-29T08:46:54.983Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "Source.cs",
-              "DocumentMoniker": "C:\\Praktik\\Hovedopgave Procedureassistent\\Hovedopgave-Procedureassistent\\Visual Studio Backend\\hovedopgave-Procedureassistent Backend\\Common\\Models\\Source.cs",
+              "DocumentMoniker": "C:\\Praktik\\Hovedopgave-Procedureassistent\\Visual Studio Backend\\hovedopgave-Procedureassistent Backend\\Common\\Models\\Source.cs",
               "RelativeDocumentMoniker": "Common\\Models\\Source.cs",
-              "ToolTip": "C:\\Praktik\\Hovedopgave Procedureassistent\\Hovedopgave-Procedureassistent\\Visual Studio Backend\\hovedopgave-Procedureassistent Backend\\Common\\Models\\Source.cs",
+              "ToolTip": "C:\\Praktik\\Hovedopgave-Procedureassistent\\Visual Studio Backend\\hovedopgave-Procedureassistent Backend\\Common\\Models\\Source.cs",
               "RelativeToolTip": "Common\\Models\\Source.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -127,26 +143,25 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 7,
               "Title": "local.settings.json",
-              "DocumentMoniker": "C:\\Praktik\\Hovedopgave Procedureassistent\\Hovedopgave-Procedureassistent\\Visual Studio Backend\\hovedopgave-Procedureassistent Backend\\hovedopgave-Procedureassistent Backend\\local.settings.json",
+              "DocumentMoniker": "C:\\Praktik\\Hovedopgave-Procedureassistent\\Visual Studio Backend\\hovedopgave-Procedureassistent Backend\\hovedopgave-Procedureassistent Backend\\local.settings.json",
               "RelativeDocumentMoniker": "hovedopgave-Procedureassistent Backend\\local.settings.json",
-              "ToolTip": "C:\\Praktik\\Hovedopgave Procedureassistent\\Hovedopgave-Procedureassistent\\Visual Studio Backend\\hovedopgave-Procedureassistent Backend\\hovedopgave-Procedureassistent Backend\\local.settings.json",
+              "ToolTip": "C:\\Praktik\\Hovedopgave-Procedureassistent\\Visual Studio Backend\\hovedopgave-Procedureassistent Backend\\hovedopgave-Procedureassistent Backend\\local.settings.json",
               "RelativeToolTip": "hovedopgave-Procedureassistent Backend\\local.settings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-10-28T12:23:21.289Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-28T12:23:21.289Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "AskFunction.cs",
-              "DocumentMoniker": "C:\\Praktik\\Hovedopgave Procedureassistent\\Hovedopgave-Procedureassistent\\Visual Studio Backend\\hovedopgave-Procedureassistent Backend\\hovedopgave-Procedureassistent Backend\\Functions\\AskFunction.cs",
+              "DocumentMoniker": "C:\\Praktik\\Hovedopgave-Procedureassistent\\Visual Studio Backend\\hovedopgave-Procedureassistent Backend\\hovedopgave-Procedureassistent Backend\\Functions\\AskFunction.cs",
               "RelativeDocumentMoniker": "hovedopgave-Procedureassistent Backend\\Functions\\AskFunction.cs",
-              "ToolTip": "C:\\Praktik\\Hovedopgave Procedureassistent\\Hovedopgave-Procedureassistent\\Visual Studio Backend\\hovedopgave-Procedureassistent Backend\\hovedopgave-Procedureassistent Backend\\Functions\\AskFunction.cs",
-              "RelativeToolTip": "hovedopgave-Procedureassistent Backend\\Functions\\AskFunction.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAowBEAAAAzAAAAAAAAAA==",
+              "ToolTip": "C:\\Praktik\\Hovedopgave-Procedureassistent\\Visual Studio Backend\\hovedopgave-Procedureassistent Backend\\hovedopgave-Procedureassistent Backend\\Functions\\AskFunction.cs*",
+              "RelativeToolTip": "hovedopgave-Procedureassistent Backend\\Functions\\AskFunction.cs*",
+              "ViewState": "AgIAACMAAAAAAAAAAAAwwBYAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-10-28T12:21:30.78Z",
               "EditorCaption": ""

@@ -6,9 +6,7 @@ using OpenAI.Chat;
 
 namespace Common.Providers;
 
-/// <summary>
-/// Al kommunikation med sprogmodellen i Azure AI Foundry.
-/// </summary>
+
 internal class OpenAIProvider
 {
     // Oprettes én gang og genbruges på tværs af kald
@@ -26,9 +24,7 @@ internal class OpenAIProvider
         return _chatClient;
     }
 
-    /// <summary>
-    /// Sender system-prompt, tidligere beskeder og det nye spørgsmål til modellen.
-    /// </summary>
+
     internal async Task<string> GetAnswerAsync(string systemPrompt, IEnumerable<ChatTurn> history, string question)
     {
         var messages = new List<ChatMessage> { new SystemChatMessage(systemPrompt) };
