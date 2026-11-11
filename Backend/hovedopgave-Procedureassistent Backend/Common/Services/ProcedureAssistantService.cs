@@ -42,6 +42,8 @@ internal class ProcedureAssistantService
             "Svar kun ud fra dokumenterne nedenfor, og brug aldrig din egen generelle viden. " +
             $"Hvis svaret ikke står i dokumenterne, så svar præcis: \"{NotFoundAnswer}\" " +
             "Svar kort og præcist, og svar altid på dansk. " +
+            "Hvis flere dokumenter siger noget forskelligt om det samme, så brug det nyeste ud fra version og dato i dokumentnavnet, " +
+            "og nævn kort, at der findes en ældre version. " +
             $"Når du har fundet svaret, så slut med en linje, der starter med \"{SourcesPrefix}\" " +
             "efterfulgt af navnene på de dokumenter, du har brugt, adskilt med semikolon.\n\n" +
             documentText;
