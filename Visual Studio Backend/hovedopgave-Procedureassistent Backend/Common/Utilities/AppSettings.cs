@@ -9,6 +9,11 @@ public static class AppSettings {
     public static string TenantId => Get("AZURE_TENANT_ID");
     public static string ApiClientId => Get("API_CLIENT_ID");
     public static string ApiAppIdUri => Get("API_APP_ID_URI");
+    public static string ApiClientSecret => Get("API_CLIENT_SECRET");
+
+    public static string SharePointHostname => Get("SHAREPOINT_HOSTNAME");
+    public static string SharePointSitePath => Get("SHAREPOINT_SITE_PATH");
+    public static string TestDocument => Get("TEST_DOCUMENT");
 
   
     public static bool AuthEnabled =>

@@ -26,4 +26,9 @@ internal static class Authenticator
 
         return _credential;
     }
+
+    internal static TokenCredential GetGraphCredential()
+    {
+        return new ClientSecretCredential(AppSettings.TenantId, AppSettings.ApiClientId, AppSettings.ApiClientSecret);
+    }
 }

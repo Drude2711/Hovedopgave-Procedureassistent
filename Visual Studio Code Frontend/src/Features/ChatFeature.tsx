@@ -66,9 +66,23 @@ export const ChatFeature: React.FunctionComponent<IChatFeatureProps> = (props: I
       {/* Beskederne */}
       <div>
         {messages.map((message) => (
-          <p key={message.id}>
-            <strong>{message.role === "user" ? "Dig" : "Assistent"}:</strong> {message.text}
-          </p>
+          <div key={message.id}>
+            <p>
+              <strong>{message.role === "user" ? "Dig" : "Assistent"}:</strong> {message.text}
+            </p>
+            {message.sources && message.sources.length > 0 && (
+              <p>
+                <small>
+                  Kilde:{" "}
+                  {message.sources.map((source) => (
+                    <a key={source.title} href={source.url} target="_blank" rel="noreferrer">
+                      {source.title}
+                    </a>
+                  ))}
+                </small>
+              </p>
+            )}
+          </div>
         ))}
         {loading && <p>Søger i procedurerne…</p>}
       </div>

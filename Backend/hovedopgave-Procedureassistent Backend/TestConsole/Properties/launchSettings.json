@@ -1,0 +1,12 @@
+{
+  "profiles": {
+    "TestConsole": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "AZURE_OPENAI_ENDPOINT": "https://praktik2026-9976-resource.openai.azure.com/",
+        "AZURE_OPENAI_DEPLOYMENT": "gpt-5"
+      }
+    }
+  }
+}
