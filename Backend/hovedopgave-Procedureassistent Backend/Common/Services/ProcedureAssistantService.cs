@@ -10,37 +10,43 @@ internal class ProcedureAssistantService
     private const string SourcesPrefix = "Kilder:";
     private const int MaxHistoryTurns = 6;
 
-    private static List<ProcedureDocument>? _documents;
-
     private readonly ILogger _logger;
     private readonly OpenAIProvider _openAIProvider;
-    private readonly StorageProvider _storageProvider;
+    private readonly SearchProvider _searchProvider;
 
     public ProcedureAssistantService(ILogger logger)
     {
         _logger = logger;
         _openAIProvider = new OpenAIProvider();
-        _storageProvider = new StorageProvider();
+        _searchProvider = new SearchProvider();
     }
 
     internal async Task<AskResponse> AskAsync(string question, List<ChatTurn>? history)
     {
-        _documents ??= await _storageProvider.GetDocumentsAsync();
-        _logger.LogInformation("Bruger {Count} dokumenter ({Length} tegn)",
-            _documents.Count, _documents.Sum(d => d.Text.Length));
-
         List<ChatTurn> recentHistory = (history ?? new List<ChatTurn>())
             .Where(t => !string.IsNullOrWhiteSpace(t.Text))
             .TakeLast(MaxHistoryTurns)
             .ToList();
 
-        string documentText = string.Join("\n\n", _documents.Select(d =>
-            $"Dokument: {d.Name}\n---\n{d.Text}\n---"));
+        string? previousQuestion = recentHistory.LastOrDefault(t => t.Role == "user")?.Text;
+        string searchQuery = previousQuestion is null ? question : $"{previousQuestion} {question}";
+
+        List<ProcedureDocument> chunks = await _searchProvider.SearchAsync(searchQuery);
+        _logger.LogInformation("Søgningen fandt {Count} tekststykker fra: {Names}",
+            chunks.Count, string.Join(", ", chunks.Select(c => c.Name).Distinct()));
+
+        if (chunks.Count == 0)
+        {
+            return new AskResponse { Answer = NotFoundAnswer, Sources = new List<Source>() };
+        }
+
+        string documentText = string.Join("\n\n", chunks.Select(c =>
+            $"Dokument: {c.Name}\n---\n{c.Text}\n---"));
 
         string systemPrompt =
             "Du er en procedureassistent for virksomheden. " +
-            "Svar kun ud fra dokumenterne nedenfor, og brug aldrig din egen generelle viden. " +
-            $"Hvis svaret ikke står i dokumenterne, så svar præcis: \"{NotFoundAnswer}\" " +
+            "Svar kun ud fra uddragene fra dokumenterne nedenfor, og brug aldrig din egen generelle viden. " +
+            $"Hvis svaret ikke står i uddragene, så svar præcis: \"{NotFoundAnswer}\" " +
             "Svar kort og præcist, og svar altid på dansk. " +
             "Hvis flere dokumenter siger noget forskelligt om det samme, så brug det nyeste ud fra version og dato i dokumentnavnet, " +
             "og nævn kort, at der findes en ældre version. " +
@@ -61,9 +67,11 @@ internal class ProcedureAssistantService
 
         List<Source> sources = notFound
             ? new List<Source>()
-            : _documents
-                .Where(d => usedNames.Contains(d.Name, StringComparer.OrdinalIgnoreCase))
-                .Select(d => new Source { Title = d.Name, Url = string.IsNullOrEmpty(d.Url) ? null : d.Url })
+            : chunks
+                .Select(c => c.Name)
+                .Distinct(StringComparer.OrdinalIgnoreCase)
+                .Where(name => usedNames.Contains(name, StringComparer.OrdinalIgnoreCase))
+                .Select(name => new Source { Title = name })
                 .ToList();
 
         return new AskResponse { Answer = answer, Sources = sources };

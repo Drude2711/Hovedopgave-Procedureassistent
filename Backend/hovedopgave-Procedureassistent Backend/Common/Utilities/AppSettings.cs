@@ -15,9 +15,12 @@ public static class AppSettings {
     public static string TestDocument => Get("TEST_DOCUMENT");
     public static string KeyVaultUri => Get("KEY_VAULT_URI");
     public static string StorageContainer => Get("STORAGE_CONTAINER");
+    public static string SearchIndex => Get("SEARCH_INDEX");
 
     public const string ApiClientSecretName = "ApiClientSecret";
     public const string StorageConnectionStringName = "StorageConnectionString";
+    public const string SearchEndpointName = "SearchEndpoint";
+    public const string SearchQueryKeyName = "SearchQueryKey";
 
   
     public static bool AuthEnabled =>
