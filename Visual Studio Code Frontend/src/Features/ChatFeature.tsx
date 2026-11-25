@@ -73,11 +73,14 @@ export const ChatFeature: React.FunctionComponent<IChatFeatureProps> = (props: I
             {message.sources && message.sources.length > 0 && (
               <p>
                 <small>
-                  Kilde:{" "}
-                  {message.sources.map((source) => (
-                    <a key={source.title} href={source.url} target="_blank" rel="noreferrer">
-                      {source.title}
-                    </a>
+                  {message.sources.length === 1 ? "Kilde:" : "Kilder:"}{" "}
+                  {message.sources.map((source, index) => (
+                    <React.Fragment key={source.title}>
+                      {index > 0 && ", "}
+                      <a href={source.url} target="_blank" rel="noreferrer">
+                        {source.title}
+                      </a>
+                    </React.Fragment>
                   ))}
                 </small>
               </p>

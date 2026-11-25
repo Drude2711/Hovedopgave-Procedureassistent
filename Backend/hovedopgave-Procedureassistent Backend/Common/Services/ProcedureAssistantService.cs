@@ -51,7 +51,8 @@ internal class ProcedureAssistantService
             "Hvis flere dokumenter siger noget forskelligt om det samme, så brug det nyeste ud fra version og dato i dokumentnavnet, " +
             "og nævn kort, at der findes en ældre version. " +
             $"Når du har fundet svaret, så slut med en linje, der starter med \"{SourcesPrefix}\" " +
-            "efterfulgt af navnene på de dokumenter, du har brugt, adskilt med semikolon.\n\n" +
+            "efterfulgt af navnene på de dokumenter, dit svar bygger på, adskilt med semikolon. " +
+            "Skriv aldrig et dokument i kildelinjen, som du kun nævner som forældet.\n\n" +
             documentText;
 
         _logger.LogInformation("Sender spørgsmål til modellen med {Count} tidligere beskeder: {Question}",
